@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(82, 73, 73); */
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #000000cf;
+  padding: 10px 10px;
+  /* display: flex; */
+  gap: 100px;
+  display: none;
+}
+.head {
+  padding-left: 17em;
+}
+.head a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.head a:hover {
+  text-decoration: underline;
+}
+.nav {
+  background: #444445;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 15px 0;
+}
+.nav li {
+  list-style: none;
+  color: #c7c7c7;
+  font-size: 0.8rem;
+}
+.banner-area {
+  background: #312f2f;
+  display: flex;
+  padding: 10px 10px;
+  justify-content: center;
+  color: #c7c7c7;
+  font-size: 0.9rem;
+}
+.main {
+  /* background-color: red; */
+  background-image: url(./images/hero_iphone16pro_preorder__bw14fpo72niu_medium_2x.jpg);
+  background-size: 100% 100%;
+
+  height: 85vh;
+  width: 100vw;
+  z-index: 1;
+}
+.name {
+  /* background-color: red; */
+  height: 16vh;
+  padding-top: 20px;
+  text-align: center;
+  font-size: large;
+  font-weight: 400;
+ 
+}
+.name h1 {
+  /* background-color: yellow; */
+  height: 8vh;
+  color: #c7c7c7;
+  padding: 1.2rem;
+  z-index: 2;
+  font-family: "SF Pro Text" "SF Pro Icons" "Helvetica Neue" Helvetica Arial
+    sans-serif;
+  font-size: 2.5em;
+  
+}
+.name h3 {
+  /* background: green; */
+  padding: 0;
+  color: #c7c7c7;
+  height: 6vh;
+  padding: 0.5rem;
+  font-size: 1.2em;
+}
+.bottom {
+  /* background-color: red; */
+  margin-top: 45vh;
+  text-align: center;
+  line-height: 2em;
+  font-family: "SF Pro Text" "SF Pro Icons" "Helvetica Neue" Helvetica Arial
+    sans-serif;
+}
+.bottom p {
+  color: #c5bbbd;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 17px;
+}
+.main :nth-child(3) {
+  /* background-color: yellow; */
+  text-align: center;
+  height: 2.5em;
+  padding: 10px 0;
+}
+.main :nth-child(3) .bn1 {
+  background-color: #0077ed;
+  color: #ffffff;
+  border-radius: 1.2em;
+  font-size: 17px;
+  padding: 12px 18px;
+  border: 0;
+}
+.main :nth-child(3) .bn2 {
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 1.2em;
+  font-size: 17px;
+  padding: 12px 18px;
+  border: 1px solid #0077ed;
+  margin-left: 1.2em;
+}
+.main :nth-child(3) .bn2:hover {
+  background-color: #0077ed;
+  cursor: pointer;
+  
+}
+.partiation {
+  /* background-color: red; */
+  height: 1vh;
+}
+.pt2 {
+  /* background-color: yellow; */
+  background-image: url(./images/hero_iphone16_preorder__djo0elxwjbma_medium_2x.jpg);
+}
+.bt1 p {
+  color: #2a2c33;
+}
+.pt3 {
+  background-image: url(images/apple\ watch\ 1.jpg);
+}
+.pt3 .bn2:hover{
+   color: white !important;
+   
+}
+.pt3 h1 {
+  font-family: "SF Pro Text" "SF Pro Icons" "Helvetica Neue" Helvetica Arial
+    sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  font-style: normal;
+}
+/* section{
+  display: grid;
+background-color: var(--gutter-color);
+        grid-gap: var(--gutter-width);
+        grid-template-areas: "";
+        -ms-grid-columns: ;
+        grid-template-columns: repeat(var(--columns), 1fr);
+        width: calc(100% - var(--double-edge-border-width) - var(--safe-area-inset-lt) - var(--safe-area-inset-rt));
+        left: calc(var(--edge-border-width) + var(--safe-area-inset-lt));
+        border-bottom: var(--gutter-width) solid var(--gutter-color);
+    } */
+    section {
+      display: flex;
+      /* padding: 10px; */
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 10px;
+      justify-content: space-between;
+      /* background-color: red; */
+    }
+    section div{
+    /* background-color: red; */
+    /* background-size: 100% 100%;
+      margin: 0.5%;
+      flex-basis:48%;
+      height: 27em;
+      
+      
+      background-repeat: no-repeat; */
+      flex: 1; /* Makes the boxes take equal space */
+    height: 300px; /* Set the height for the boxes */
+    overflow: hidden; /* Ensures that the image does not overflow the box */
+    position: relative; /* Necessary to keep the */
+    }
+    section div img{
+      /* width: 100%;
+      height: 100%; */
+      /* height: 100%;
+      width: 100%; */
+      /* justify-content: center; */
+      /* object-fit: calc(); */
+      /* object-fit: cover;
+      transform: scale(1.1);
+      transition: transform 0.3s ease;  */
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Makes the image cover the container */
+      transform: scale(1.2); /* Zoom the image */
+      transition: transform 0.3s ease; /* Smooth zoom transition */
+      position: absolute; /* Keeps the image confined to the container */
+      top: 0;
+      left: 0;
+      
+
+
+
+    }
+
+    
