@@ -5,6 +5,7 @@
 }
 
 body {
+  overflow-x: hidden;
   /* background-color: rgb(82, 73, 73); */
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,6 +27,7 @@ header {
   text-decoration: underline;
 }
 .nav {
+  
   background: #444445;
   display: flex;
   gap: 40px;
@@ -33,6 +35,8 @@ header {
   padding: 15px 0;
 }
 .nav li {
+  /* position:sticky; */
+  /* position: static; */
   list-style: none;
   color: #c7c7c7;
   font-size: 0.8rem;
@@ -149,62 +153,84 @@ header {
   font-weight: 400;
   font-style: normal;
 }
-/* section{
-  display: grid;
-background-color: var(--gutter-color);
-        grid-gap: var(--gutter-width);
-        grid-template-areas: "";
-        -ms-grid-columns: ;
-        grid-template-columns: repeat(var(--columns), 1fr);
-        width: calc(100% - var(--double-edge-border-width) - var(--safe-area-inset-lt) - var(--safe-area-inset-rt));
-        left: calc(var(--edge-border-width) + var(--safe-area-inset-lt));
-        border-bottom: var(--gutter-width) solid var(--gutter-color);
-    } */
-    section {
-      display: flex;
-      /* padding: 10px; */
-      flex-wrap: wrap;
-      width: 100%;
-      gap: 10px;
-      justify-content: space-between;
-      /* background-color: red; */
-    }
-    section div{
-    /* background-color: red; */
-    /* background-size: 100% 100%;
-      margin: 0.5%;
-      flex-basis:48%;
-      height: 27em;
-      
-      
-      background-repeat: no-repeat; */
-      flex: 1; /* Makes the boxes take equal space */
-    height: 300px; /* Set the height for the boxes */
-    overflow: hidden; /* Ensures that the image does not overflow the box */
-    position: relative; /* Necessary to keep the */
-    }
-    section div img{
-      /* width: 100%;
-      height: 100%; */
-      /* height: 100%;
-      width: 100%; */
-      /* justify-content: center; */
-      /* object-fit: calc(); */
-      /* object-fit: cover;
-      transform: scale(1.1);
-      transition: transform 0.3s ease;  */
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Makes the image cover the container */
-      transform: scale(1.2); /* Zoom the image */
-      transition: transform 0.3s ease; /* Smooth zoom transition */
-      position: absolute; /* Keeps the image confined to the container */
-      top: 0;
-      left: 0;
-      
+section{
+  display: flex ;
+  flex-direction: row ;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-shrink: 1;
+  box-sizing: border-box;
+  /* gap: 1%; */
+}
+section div{
+  
+  margin: 0.5rem;
+
+  /* background-color: red; */
+  height: 31em;
+  width: 48%; 
+  justify-content: center;
+  align-items: center;
+  
+  overflow: hidden;
+  
+}
+section div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.homepage{
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  
+}
+.scroll{
+  margin: 12px;
+  background-color: red;
+}
+footer{
+  
+}
+.info{
+  background-color: RGBA(0, 0, 0, 0);
+  margin: 0%;
+  margin-right: 12%;
+  margin-left: 12%;
+
+  align-items: center;
+  text-align: justify;
+}
+.info li{
+  background-color: yellow;
+  list-style-type:none;
+  padding: 0 0 9.6px;
+  margin: 0.5em;
+  font-size: 12px;
+  text-align: justify;
+}
+.nav-bottom{
+  display: flex;
+  flex-direction: row;
+  /* gap: 1%; */
 
 
+}
+.nav-bottom div{
+  background-color: green;
+  margin: 2px;
+padding: 1em 3em;
+text-align: justify;
+ height: 20em;
+ width: 100%;
+}
 
-    }
-
-    
+li{
+  list-style-type:none;
+}
+.outer{
+  text-align: justify;
+}
