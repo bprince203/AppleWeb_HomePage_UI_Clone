@@ -193,39 +193,54 @@ section div img{
   background-color: red;
 }
 footer{
+  /* display: none; */
   
 }
 .info{
   background-color: RGBA(0, 0, 0, 0);
   margin: 0%;
-  margin-right: 12%;
-  margin-left: 12%;
-
+  margin-right: 15%;
+  margin-left: 15%;
   align-items: center;
   text-align: justify;
 }
 .info li{
-  background-color: yellow;
+  /* background-color: yellow; */
   list-style-type:none;
   padding: 0 0 9.6px;
   margin: 0.5em;
   font-size: 12px;
   text-align: justify;
+  color: rgba(0,0,0,0.56);
 }
 .nav-bottom{
   display: flex;
   flex-direction: row;
+  margin-left: 15%;
+  margin-right: 15%;
+
   /* gap: 1%; */
 
 
 }
 .nav-bottom div{
-  background-color: green;
+  /* background-color: green; */
   margin: 2px;
 padding: 1em 3em;
 text-align: justify;
  height: 20em;
  width: 100%;
+ font-family:  "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", Helvetica, Arial, sans-serif;
+Color:rgba(0, 0, 0, 0.56);
+font-weight: 400;
+font-size: 12px;
+font-style: none;
+line-height: 22px;
+}
+.nav-bottom div span{
+  Color:rgba(0, 0, 0, 0.88);
+  
+
 }
 
 li{
@@ -233,4 +248,27 @@ li{
 }
 .outer{
   text-align: justify;
+}
+.rights{
+  /* background-color: red; */
+  margin-top: 10px;
+  margin-left: 11%;
+  margin-right: 11%;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+.rights button{
+  margin: 20px;
+  border-style: none;
+  color: rgba(0,0,0,0.56);
+  font-weight: 400;
+}
+.hrline{
+  margin-top: 90px;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: rgba(0,0,0,0.56);
 }
