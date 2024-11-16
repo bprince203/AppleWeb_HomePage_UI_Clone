@@ -162,18 +162,20 @@ section{
   flex-shrink: 1;
   box-sizing: border-box;
   /* gap: 1%; */
+  gap: 0.5rem;
+
 }
 section div{
   
-  margin: 0.5rem;
-
+  /* margin: 0.5rem; */
   /* background-color: red; */
   height: 31em;
   width: 48%; 
   justify-content: center;
   align-items: center;
+  position: relative;
   
-  overflow: hidden;
+  /* overflow: hidden; */
   
 }
 section div img{
@@ -182,15 +184,75 @@ section div img{
   object-fit: cover;
   object-position: center;
 }
+.card-details{
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  padding-bottom: 40%;
+  left: 0;
+  color: #fff;
+  background-color: rgba(27, 27, 27, 0.618);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: .5s ease-in-out;
+  opacity: 0;
+
+}
+ 
+  .bn1 {
+    background-color: #0077ed;
+    color: #ffffff;
+    border-radius: 1.2em;
+    font-size: 17px;
+    padding: 12px 18px;
+    border: 0;
+  }
+  .bn2 {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 1.2em;
+    font-size: 17px;
+    padding: 12px 18px;
+    border: 1px solid #0077ed;
+    margin-left: 1.2em;
+  }
+  .bn2:hover{
+    background-color: #0077ed;
+    cursor: pointer;  
+
+  }
+  .bn1:hover{
+    background-color: #3351bc;
+  }
+ 
+.card-details:hover{
+  opacity: 1;
+}
+
 .homepage{
   height: 100%;
   width: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
   
 }
-.scroll{
-  margin: 12px;
-  background-color: red;
+
+.carousel {
+  /* overflow: hidden; */
+  width: auto;
+  max-width:auto;
+  border-radius: 10px;
+  position: relative;
+  margin: 15px;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
 }
 footer{
   /* display: none; */
